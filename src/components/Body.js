@@ -21,7 +21,7 @@ const Body=()=>{
     },[]);
 
     const fetchData=async()=>{
-        const data= await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.2582415&lng=77.3952417&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const data= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.2582415&lng=77.3952417&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
     
         const json=await data.json();
         //console.log(json);
